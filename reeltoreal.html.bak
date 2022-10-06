@@ -7,7 +7,7 @@
 <body>
 
 <div class="header">
-	<img src="media/logo.png" alt="Logo" width="200px" height="auto">
+	<img src="media/logo.PNG" alt="Logo" width="200px" height="auto">
 </div>
 
 <div class="topnav">
@@ -19,12 +19,38 @@
 
 <div class="cardcollection">
 	<div class="card">
-	  <img src="media/diagnostics.jpg" style="width:100%">
-	  <h1>3-Stage Diagnostics</h1>
-	  <p>The 3 Stage Diagnostics in all their glory, unedited.</p>
-	  <p class="creator">Unknown Creator</p>
-	  <p><button>Download (.rshw)</button></p>
+	  <img src="media/september_2003_show_thumb.jpg" style="width:100%">
+	  <h1>September 2003 Show</h1>
+	  <p>This is the first show since Summertime 2000 where Jasper doesn't have his own solo song!</p>
+	  <p class="creator">JESmith</p>
+	  <p><a href="https://drive.google.com/file/d/1Tl9TMAFficwfU_mZ_ndrnljzhzfwofQQ/view?usp=sharing">Download (.rshw)</a></p>
+	  <p><a href="https://drive.google.com/file/d/14lNsJz9itGE_OiN60F3PcJIhHGrZva77/view?usp=sharing">Download (.mp4)</a></p>
 	</div>
+	<div class="card">
+	  <img src="media/september_2003_show_thumb.jpg" style="width:100%">
+	  <h1>September 1993 Show</h1>
+	  <p>Also known as the You're A Star Showtape.</p>
+	  <p class="creator">JESmith</p>
+	  <p><a href="https://drive.google.com/file/d/1DDqWyLplQG4xPiUZ41rDKJOKyF2k6yVG/view?usp=sharing">Download (.rshw)</a></p>
+	  <p><a href="https://drive.google.com/file/d/1OBygH-P1yKbts2RMNZf09nboRGUD0Pyw/view?usp=sharing">Download (.mp4)</a></p>
+	</div>
+	<div class="card">
+	  <img src="media/patriotic_live_2000_thumb.jpg" style="width:100%">
+	  <h1>Patriotic Live 2000</h1>
+	  <p>An upbeat remake of the first Patriotic Live!</p>
+	  <p class="creator">JESmith</p>
+	  <p><a href="https://drive.google.com/file/d/1rIF4un0KwiO4GKu8BlHp_oQ0kKj5FTkC/view?usp=sharing">Download (.rshw)</a></p>
+	  <p><a href="https://drive.google.com/file/d/1BzKy3DNAkvrN5tqV8UNY3yhkRXiREw7i/view?usp=sharing">Download (.mp4)</a></p>
+	</div>
+	<div class="card">
+	  <img src="media/patriotic_live_2000_thumb.jpg" style="width:100%">
+	  <h1>May 1998</h1>
+	  <p>A well known live show. The first half is for dancing, the second half is for marching around the showroom!</p>
+	  <p class="creator">JESmith</p>
+	  <p><a href="https://drive.google.com/file/d/1IVKvLWOrTnHeWUcnUOQPUIndCKibZJNI/view?usp=sharing">Download (.rshw)</a></p>
+	  <p><a href="https://drive.google.com/file/d/1V0tqwmd9L3dBv5zXiAhSockCPA3nLBmn/view?usp=sharing">Download (.mp4)</a></p>
+	</div>
+	
 </div>
 
 
