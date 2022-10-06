@@ -1,0 +1,100 @@
+.mySlides {display: none}
+
+html *
+{
+   font-family: Tahoma !important;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #22223b ;
+  padding: 20px;
+  text-align: center;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #4a4e69;
+}
+
+/* Style the topnav links */
+.topnav a {
+  width: 90px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  width: 120px;
+  background-color: #22223b;
+  color: white;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.card {
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.creator {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.cardcollection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+.cardcollection > div {
+  margin: 6px;
+}
