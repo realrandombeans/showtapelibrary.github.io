@@ -13,14 +13,14 @@
 <div class="topnav">
   <a href="index.html">Home</a>
   <a href="reeltoreal.html">Reel to Real</a>
-  <a href="#">Faz Anim</a>
-  <a href="#">Rockafire Replay</a>
+  <a href="fa.html">Faz Anim</a>
+  <a href="rr.html">Rockafire Replay</a>
   <a href="#">Contact</a>
 </div>
 
 <div class="responsive">
 	<img src="media/bannerblur.jpg" alt="Image" width="100%" height="auto">
-	<div class="centered">Showtapes at your service.</div>
+	<img src="media/fa.png" class="centered" alt="Image" width="25%" height="auto">
 </div>
 
 

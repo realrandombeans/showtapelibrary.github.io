@@ -23,7 +23,7 @@ body {
 
 /* Style the topnav links */
 .topnav a {
-  width: 90px;
+  width: 120px;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -35,9 +35,16 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  width: 120px;
+  width: 160px;
   background-color: #22223b;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }
 
 .responsive {
@@ -69,6 +76,15 @@ body {
 .creator {
   color: grey;
   font-size: 22px;
+}
+.tag {
+  padding: 5px;
+  width: 50%;
+  border-radius: 20px;
+  background-color: #4a4e69;
+  color: white;
+  font-size: 20px;
+  margin: auto;
 }
 
 .card a {
