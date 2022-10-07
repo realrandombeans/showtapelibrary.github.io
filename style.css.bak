@@ -71,6 +71,10 @@ body {
   padding: 10px;
   text-align: center;
   font-family: arial;
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
 .creator {
@@ -81,7 +85,7 @@ body {
   padding: 5px;
   width: 50%;
   border-radius: 20px;
-  background-color: #f2f2f2;
+  background-color: #4a4e69;
   color: white;
   font-size: 20px;
   margin: auto;
