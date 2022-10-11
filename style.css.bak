@@ -5,6 +5,13 @@ html *
    font-family: Tahoma !important;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 body {
   margin: 0;
 }
@@ -23,7 +30,7 @@ body {
 
 /* Style the topnav links */
 .topnav a {
-  width: 120px;
+  width: 150px;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -35,7 +42,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  width: 160px;
+  width: 180px;
   background-color: #22223b;
   color: white;
 }
@@ -74,7 +81,7 @@ body {
   transition: 0.5s;
 }
 .card:hover {
-  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.75);
 }
 
 .creator {
@@ -119,4 +126,38 @@ body {
 }
 .cardcollection > div {
   margin: 6px;
+}
+
+form.form2 input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid white;
+  float: center;
+  width: 600px;
+  color: white;
+  background: #4a4e69;
+}
+
+form.form2 button {
+  float: center;
+  width: 200px;
+  padding: 10px;
+  background: #22223b;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+form.form2 button:hover {
+  width: 250px;
+  background: #4a4e69;
+}
+
+form.form2::after {
+  content: "";
+  clear: both;
+  display: table;
 }

@@ -15,11 +15,25 @@
   <a href="reeltoreal.html">Reel to Real</a>
   <a href="fa.html">Faz Anim</a>
   <a href="rr.html">Rockafire Replay</a>
+  <a href="mods.html">Mods</>
   <a href="#">Contact</a>
 </div>
 
+<form class="form2" action="">
+  <input type="text" placeholder="Search.." name="search" id="search">
+  <button type="button" id="submit_form" onclick="checkInput()" value="Submit">Search</button>
+</form>
+
+<script>
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+</script>
+
 <div class="responsive">
-	<img src="media/bannerblur.jpg" alt="Image" width="100%" height="auto">
+	<img src="media/fabanner.jpg" alt="Image" width="100%" height="auto">
 	<img src="media/fa.png" class="centered" alt="Image" width="25%" height="auto">
 </div>
 
