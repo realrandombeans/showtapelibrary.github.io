@@ -3,26 +3,108 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+	<style>
+	body {
+		background-color: #22223b;
+	}
+	#loader {
+	  background-color: #22223b;
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  z-index: 1;
+	  width: 60px;
+	  height: 60px;
+	  margin: -76px 0 0 -76px;
+	  border: 8px solid #4a4e69;
+	  border-radius: 50%;
+	  border-top: 8px solid #FFFFFF;
+	  -webkit-animation: spin 1s ease-in-out infinite;
+	  animation: spin 1s cubic-bezier infinite;
+	}
+
+	@-webkit-keyframes spin {
+	  0% { -webkit-transform: rotate(0deg); }
+	  100% { -webkit-transform: rotate(360deg); }
+	}
+
+	@keyframes spin {
+	  0% { transform: rotate(0deg); }
+	  100% { transform: rotate(360deg); }
+	}
+
+	/* Add animation to "page content" */
+	.animate-bottom {
+	  position: relative;
+	  -webkit-animation-name: animatebottom;
+	  -webkit-animation-duration: 1s;
+	  animation-name: animatebottom;
+	  animation-duration: 1s
+	}
+
+	@-webkit-keyframes animatebottom {
+	  from { bottom:-100px; opacity:0 } 
+	  to { bottom:0px; opacity:1 }
+	}
+
+	@keyframes animatebottom { 
+	  from{ bottom:-100px; opacity:0 } 
+	  to{ bottom:0; opacity:1 }
+	}
+
+	#myDiv {
+	  background-color: white;
+	  display: none;
+	  text-align: center;
+	}
+	</style>
 </head>
 <body>
+<body onload="myFunction()" style="margin:0;">
 
-<div class="header">
-	<img src="media/logo.PNG" alt="Logo" width="200px" height="auto">
+<div id="loader"></div>
+
+
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+	<div class="header">
+		<img src="media/logo.PNG" alt="Logo" width="200px" height="auto">
+	</div>
+
+	<div class="topnav">
+	  <a href="index.html">Home</a>
+	  <a href="reeltoreal.html">Reel to Real</a>
+	  <a href="fa.html">Faz Anim</a>
+	  <a href="rr.html">Rockafire Replay</a>
+	  <a href="mods.html">Mods</>
+	  <a href="#">Contact</a>
+	</div>
+
+	<div class="responsive">
+		<img src="media/bannerblur.jpg" alt="Image" width="100%" height="auto">
+		<div class="centered">Showtapes at your service.</div>
+	</div>
+
+	<div class="alert">
+	  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+	  <strong>Note:</strong> This website is a work in progress! Don't be surprised to see unfinished pages.
+	</div>
+
 </div>
 
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="reeltoreal.html">Reel to Real</a>
-  <a href="fa.html">Faz Anim</a>
-  <a href="rr.html">Rockafire Replay</a>
-  <a href="mods.html">M</>
-  <a href="#">Contact</a>
-</div>
+<script>
+var myVar;
 
-<div class="responsive">
-	<img src="media/bannerblur.jpg" alt="Image" width="100%" height="auto">
-	<div class="centered">Showtapes at your service.</div>
-</div>
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
 
 </body>

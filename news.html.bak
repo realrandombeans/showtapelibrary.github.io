@@ -4,23 +4,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<style>
-	body {
-		background-color: #22223b;
-	}
+	/* Center the loader */
 	#loader {
-	  background-color: #22223b;
 	  position: absolute;
 	  left: 50%;
 	  top: 50%;
 	  z-index: 1;
-	  width: 60px;
-	  height: 60px;
+	  width: 120px;
+	  height: 120px;
 	  margin: -76px 0 0 -76px;
-	  border: 8px solid #4a4e69;
+	  border: 16px solid #f3f3f3;
 	  border-radius: 50%;
-	  border-top: 8px solid #FFFFFF;
-	  -webkit-animation: spin 1s ease-in-out infinite;
-	  animation: spin 1s ease-in-out infinite;
+	  border-top: 16px solid #3498db;
+	  -webkit-animation: spin 2s linear infinite;
+	  animation: spin 2s linear infinite;
 	}
 
 	@-webkit-keyframes spin {
@@ -53,21 +50,18 @@
 	}
 
 	#myDiv {
-	  background-color: white;
 	  display: none;
 	  text-align: center;
 	}
 	</style>
 </head>
 <body>
+
 <body onload="myFunction()" style="margin:0;">
 
 <div id="loader"></div>
 
-
-
 <div style="display:none;" id="myDiv" class="animate-bottom">
-
 	<div class="header">
 		<img src="media/logo.PNG" alt="Logo" width="200px" height="auto">
 	</div>
@@ -85,12 +79,6 @@
 		<img src="media/bannerblur.jpg" alt="Image" width="100%" height="auto">
 		<div class="centered">Showtapes at your service.</div>
 	</div>
-
-	<div class="alert">
-	  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-	  <strong>Note:</strong> This website is a work in progress! Don't be surprised to see unfinished pages.
-	</div>
-
 </div>
 
 <script>
