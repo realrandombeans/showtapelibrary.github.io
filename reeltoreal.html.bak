@@ -29,7 +29,14 @@
 		<img src="media/bannerblur.jpg" alt="Image" width="100%" height="auto">
 		<img src="media/rtr.png" class="centered" alt="Image" width="25%" height="auto">
 	</div>
-
+	
+	
+	<div class="alert">
+	  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+	  <strong>JSON Conversion:</strong> We're converting our storage system to JSON. Expect links to not work or for the website to be down.
+	</div>
+	
+	
 	<form class="form2" action="">
 	  <input type="text" placeholder="Search.." name="search" id="search">
 	  <button type="button" id="submit_form" onclick="checkInput()" value="Submit">Search</button>
@@ -45,285 +52,23 @@
 
 	<div class="cardcollection">
 		<div class="card">
-		  <img src="media/pancakeday.png" style="width:100%">
-		  <h1>Pancake Day</h1>
-		  <p>Looks like the cyberstar wasn't working as intented.</p>
-		  <p class="creator">randombeans</p>
-		  <p><a href="https://www.mediafire.com/file/bt25k2stzx4g7bz/pancake.rshw/file">Download (.rshw)</a></p>
-		  <p><a href="https://www.mediafire.com/file/xlebdtmhfihwrlq/pancake.mp4/file">Download (.mp4)</a></p>
-		</div>
-		<div class="card">
-		  <img src="media/blowingupa3stage.png" style="width:100%">
-		  <h1>Blowing up a 3 Stage</h1>
-		  <p>Whoops.</p>
-		  <p class="creator">randombeans</p>
-		  <p><a href="https://www.mediafire.com/file/mkr0l8wiiv6ck6h/boom.rshw/file">Download (.rshw)</a></p>
+		  <img src="thumb" style="width:100%">
+		  <h1 id="title"></h1>
+		  <p>description</p>
+		  <p class="creator">creator</p>
+		  <p><a href="rshw">Download (.rshw)</a></p>
+		  <p><a href="mp4">Download (.mp4)</a></p>
 		</div>
 		
-		<div class="card">
-		  <img src="media/helengetsoffended.png" style="width:100%">
-		  <h1>Munch is a bi-</h1>
-		  <p>Munch has a go at doing impressions, and Helen doesn't seem to enjoy it.</p>
-		  <p class="creator">randombeans</p>
-		  <p><a href="https://www.mediafire.com/file/u7e6qv9ip6vul0x/munch.rshw/file">Download (.rshw)</a></p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/southparkIntro.png" style="width:100%">
-		  <h1>South Park Intro</h1>
-		  <p>Betcha you wouldn't see this come to life!</p>
-		  <p class="creator">randombeans</p>
-		  <p><a href="https://www.mediafire.com/file/7zynrziu2qld19f/southparkintro.cshw/file">Download (.cshw)</a></p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/yourdoorwaslocked.png" style="width:100%">
-		  <h1>Your door was locked!</h1>
-		  <p>Pizzacam has a go at leading a song along with his good old friend Pasqually!</p>
-		  <p class="creator">randombeans</p>
-		  <p><a href="https://www.mediafire.com/file/ffcu7n7euq6cp0p/Yourdoorwaslocked.rshw/file">Download (.rshw)</a></p>
-		  <p><a href="https://www.mediafire.com/file/in5aortuabbdlu6/Yourdoorwaslocked.mp4/file">Download (.mp4)</a></p>
-		</div>
-		
-		
-		<div class="card">
-		  <img src="media/the_2.0_chat_thumb.jpg" style="width:100%">
-		  <h1>The 2.0 Chat</h1>
-		  <p>Chuck and the gang are talking about how they're gonna be replaced...despite it being a digital game! Audio and video are from CEC Blender.</p>
-		  <p class="creator">HedgeWedge</p>
-		  <p><a href="https://www.mediafire.com/file/5b8vvhzmob1r775/The_2.0_Chat.rshw/file">Download (.rshw)</a></p>
-		  <p><a href="https://www.mediafire.com/file/48rfpf14xnxk7ww/The_2.0_Chat.mp4/file">Download (.mp4)</a></p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/emergency_tape_1993_thumb.jpg" style="width:100%">
-		  <h1>Emergency Backup 1993</h1>
-		  <p>A tape used when the animatronics or show was having problems.</p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1rWz_hdEGXQyop-btXZLtjA3dJ76gyVW9/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/1gw3pOxPTYn2-ErH7NznAozyzLdDhmSai/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/jan98.jpg" style="width:100%">
-		  <h1>January 1998 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1L6gGQJ1rmuBFZQxw7I9mwnyW-JlhSmIG/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/1eYFzV8lkofiSk6wvoIUr5WOPoHeU765c/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/jan02.JPG" style="width:100%">
-		  <h1>January 2002 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1qoEwBXyYEPtiCNZzUOWj9WoOYdsI-H3P/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/1lDt3mYXb6ipG_79D1OrAn97pBv-cXA7K/view?usp=sharing>">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/jan10.JPG" style="width:100%">
-		  <h1>January 2010 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/11FWCBhnM9mUWcv_zbfBIJRTtwe9iwqEf/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/1iddAYYE3dlUJLHA7n39s1dYY7Ws1Hc3O/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/july93.jpg" style="width:100%">
-		  <h1>July 1993 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1mbaOcIGy3CQtsvUNO9qqBNVxEeCF92jr/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/1KLj0_7ozpSwbblWEa1obHoN2OU0XbkOL/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/sept03.JPG" style="width:100%">
-		  <h1>September 2003 Show</h1>
-		  <p>This is the first show since Summertime 2000 where Jasper doesn't have his own solo song!</p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1Tl9TMAFficwfU_mZ_ndrnljzhzfwofQQ/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/14lNsJz9itGE_OiN60F3PcJIhHGrZva77/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/sept93.jpg" style="width:100%">
-		  <h1>September 1993 Show</h1>
-		  <p>Also known as the You're A Star Showtape.</p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1DDqWyLplQG4xPiUZ41rDKJOKyF2k6yVG/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/1OBygH-P1yKbts2RMNZf09nboRGUD0Pyw/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/patriotic_live_2000_thumb.jpg" style="width:100%">
-		  <h1>Patriotic Live 2000</h1>
-		  <p>An upbeat remake of the first Patriotic Live!</p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1rIF4un0KwiO4GKu8BlHp_oQ0kKj5FTkC/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/1BzKy3DNAkvrN5tqV8UNY3yhkRXiREw7i/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/studio_c_premiere_thumb.jpg" style="width:100%">
-		  <h1>May 1998 Show (aka Studio C Premiere)</h1>
-		  <p>One of the first showtapes for Studio C!</p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1IVKvLWOrTnHeWUcnUOQPUIndCKibZJNI/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/1V0tqwmd9L3dBv5zXiAhSockCPA3nLBmn/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/always_coca_cola.png" style="width:100%">
-		  <h1>Always Coca Cola</h1>
-		  <p>That classic, catchy Coca Cola ad from the 80s, now encapsulated as a showtape in Reel to Real!</p>
-		  <p class="creator">HedgeWedge</p>
-		  <p><a href="https://www.mediafire.com/file/4i2y87iea22syo0/Always_Coca_Cola_3-Stage.rshw/file">Download (.rshw)</a></p>
-		  <p><a href="https://www.mediafire.com/file/gy7oj6zhegqe0zg/Always_Coca_Cola_Studio_C.sshw/file">Download (.sshw)</a></p>
-		  <p><a href="https://www.mediafire.com/file/gqgv9xws7irg3mm/Always_Coca_Cola.mp4/file">Download (.mp4)</a></p>
-		
-		</div>
-		
-		<!--INSERT YOUR CARDS BELOW THIS MESSAGE-->
-		<div class="card">
-		  <img src="media/pride.jpg" style="width:100%">
-		  <h1>American Pride 1991</h1>
-		  <p></p>
-		  <p class="creator">HedgeWedge</p>
-		  <p><a href="https://www.mediafire.com/file/bn03l2bps8ptbk1/American_Pride_1991.zip/file">Download (.cshws)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/ShaverImage.png" style="width:100%">
-		  <h1>I've Got An Electric Shaver</h1>
-		  <p>Remember that one cover Weird Al did on that one show? You probably don't since it was forgotten, but I found it and decided to program this bop.</p>
-		  <p class="creator">HedgeWedge</p>
-		  <p><a href="https://www.mediafire.com/file/iobvgugxaguy9dj/I%2527ve_Got_An_Electric_Shaver.rshw/file">Download (.rshw)</a></p>
-		  <p><a href="https://www.mediafire.com/file/5l1jg1eatrah3k7/I%2527ve_Got_An_Electric_Shaver.mp4/file">Download (.mp4)</a></p>
-		</div>
-		
-		<div class="card">
-		  <img src="media/jan03.jpg" style="width:100%">
-		  <h1>January 2003 Show</h1>
-		  <p></p>
-		  <p class="creator">SonicFazbear</p>
-		  <p><a href="https://drive.google.com/file/d/1Mgk1Pd7UIIzXt2Xg36JAYHg6PsE5ePzZ/view?usp=sharing">Download (.rshw)</a></p>
-		  <p><a href="https://drive.google.com/file/d/1IzKt6gM6k5xIOTMmXLVvzIvzrSZWNnEw/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-			<div class="card">
-		  <img src="media/familytimes.jpg" style="width:100%">
-		  <h1>Family Times</h1>
-		  <p>This song was meant for the 2nd segment in the September 1991 showtape, but was replaced by Responsibility from Segment 1. Responsibility's spot was filled by Rhythm Of The Night, from the September 1990 show. Keep in mind this showtape has no audio.</p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1xhRPms5kV7aOIJBey3aHjr7gUDSNwVld/view?usp=sharing">Download (.rshw)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-			<div class="card">
-		  <img src="media/jan97.jpg" style="width:100%">
-		  <h1>January 1997 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1R5yXc0zCNKraxZG8seEMhoVilAifaD7Z/view?usp=sharing">Download (.rshw)</a></p>
-			  <p><a href="https://drive.google.com/file/d/10WR_ZwIynSwU3bTrTT3DMRV4QzsGSFSG/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-			<div class="card">
-		  <img src="media/april06.jpg" style="width:100%">
-		  <h1>April 2006 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1xDlha6fRZydpFex2b3_DLRJKiR2WzD9A/view?usp=sharing">Download (.rshw)</a></p>
-			  <p><a href="https://drive.google.com/file/d/18Y9105aMBPfk2jdsCkc5yywEFQpoxF42/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-			<div class="card">
-		  <img src="media/april07.jpg" style="width:100%">
-		  <h1>April 2007 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1jTPfER1LZTyVGSuSPyIFpeDDDOME5E8W/view?usp=sharing">Download (.rshw)</a></p>
-			  <p><a href="https://drive.google.com/file/d/1Q9_bmyVZNRxshLOAmZcLUWfmx0E9eI93/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-			<div class="card">
-		  <img src="media/aug96.jpg" style="width:100%">
-		  <h1>August 1996 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1exxisxLNHXrdjhHmleLs98PxSxXMqe4g/view?usp=sharing">Download (.rshw)</a></p>
-			  <p><a href="https://drive.google.com/file/d/1tabSC0EmETrG71uuWCIkoNR0ZulF-Aud/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-			<div class="card">
-		  <img src="media/aug97.jpg" style="width:100%">
-		  <h1>August 1997 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1BsDkca37DKiKS1iJPj3YindJc343QGgD/view?usp=sharing">Download (.rshw)</a></p>
-			  <p><a href="https://drive.google.com/file/d/1JQtTGQjR5lZ4wM0AlN96bcNEkCLJAd4r/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-			<div class="card">
-		  <img src="media/birthday95.JPG" style="width:100%">
-		  <h1>Birthday 1995 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1XcJqI011ehWhCV2_zvJvIGd-ESbsibn_/view?usp=sharing">Download (.rshw)</a></p>
-			  <p><a href="https://drive.google.com/file/d/1E04dDLBSu5IEyCH8R5-V6yKoR9j9mDr_/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-			<div class="card">
-		  <img src="media/dec93.jpg" style="width:100%">
-		  <h1>December 1993 Show</h1>
-		  <p></p>
-		  <p class="creator">JESmith</p>
-		  <p><a href="https://drive.google.com/file/d/1vN4U6ZyIE99bJou9qOf4ATAeWF-qv5u4/view?usp=sharing">Download (.rshw)</a></p>
-			  <p><a href="https://drive.google.com/file/d/1IuRkuUpYxDEJYTHqckquNP7xkcOUiN_m/view?usp=sharing">Download (.mp4)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-			<div class="card">
-		  <img src="media/grammys.jpg" style="width:100%">
-		  <h1>Grammy Awards Show 1988</h1>
-		  <p></p>
-		  <p class="creator">HedgeWedge</p>
-		  <p><a href="https://www.mediafire.com/file/11psxbm22xrtxp1/Grammy_Show_1988.zip/file">Download (.cshws)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
-		
-			<div class="card">
-		  <img src="media/personalfavs.jpg" style="width:100%">
-		  <h1>Personal Favorites Show 1988</h1>
-		  <p></p>
-		  <p class="creator">HedgeWedge</p>
-		  <p><a href="https://www.mediafire.com/file/2g7kiu7yx1hme5a/Personal_Favorites_1988.zip/file">Download (.cshws)</a></p>
-		  <p class="tag">OFFICIAL</p>
-		</div>
+		<div id="cards"></div>
 	</div>
-
-
-</div>
+	
+	<script>
+	.getJSON("rtr_showtapes.json")
+    .done(function( data ) {
+       console.log(data)
+    });
+    </script>
 
 
 <script>
