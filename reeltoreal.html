@@ -64,7 +64,11 @@
 	</div>
 	
 	<script>
-		fetch('./rtr_showtapes.json').then(result => { result.json().then(data => { console.log(data); }) })
+		try {
+			fetch('./rtr_showtapes.json').then(result => { result.json().then(data => { console.log(data); }) })
+		} catch (error) {
+		  console.error(error);
+		}
 
     </script>
 
