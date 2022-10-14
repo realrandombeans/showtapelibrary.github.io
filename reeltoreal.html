@@ -64,10 +64,19 @@
 	</div>
 	
 	<script>
-	.getJSON("rtr_showtapes.json")
-    .done(function( data ) {
-       console.log(data)
-    });
+		try {
+			fetch('rtr_showtapes.json').then(response => 
+				response.json().then(data => ({
+					data: data,
+					status: response.status
+				})
+			).then(res => {
+				console.log(res.status, res.data.title)
+			}));
+		} catch (error) {
+		  console.error(error);
+		}
+
     </script>
 
 

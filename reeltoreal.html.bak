@@ -33,7 +33,7 @@
 	
 	<div class="alert">
 	  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-	  <strong>JSON Conversion:</strong> We're converting our storage system to JSON. Expect links to not work or for the website to be down.
+	  <strong>JSON Conversion:</strong>The website is currently down for maintenance. Check back soon!
 	</div>
 	
 	
@@ -64,10 +64,14 @@
 	</div>
 	
 	<script>
-	.getJSON("rtr_showtapes.json")
-    .done(function( data ) {
-       console.log(data)
-    });
+		fetch('rtr_showtapes.json').then(response => 
+			response.json().then(data => ({
+				data: data,
+				status: response.status
+			})
+		).then(res => {
+			console.log(res.status, res.data.title)
+		}));
     </script>
 
 
