@@ -72,6 +72,7 @@
 				})
 			).then(res => {
 				console.log(res.status, res.data.title)
+				data => {  console.log(data);  }
 			}));
 		} catch (error) {
 		  console.error(error);
