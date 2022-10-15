@@ -61,7 +61,18 @@
 	</div>
 	
 	<script>
-		fetch('./rtr_showtapes.json').then(result => { result.json().then()(data => {console.log(data);.then data.result.forEach(makeCard); }); });
+		fetch('./rtr_showtapes.json').then
+		(result => 
+			{ 
+				result.json().then()
+				(
+					data => {
+						console.log(data); 
+						data.result.forEach(makeCard); 
+					}
+				); 
+			}
+		);
 		
 		function makeCard(card)
 		{
