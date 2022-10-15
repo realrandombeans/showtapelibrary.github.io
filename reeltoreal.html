@@ -52,19 +52,30 @@
 
 	<div class="cardcollection">
 		<div class="card">
-		  <img src="thumb" style="width:100%">
-		  <h1 id="title"></h1>
-		  <p>description</p>
-		  <p class="creator">creator</p>
-		  <p><a href="rshw">Download (.rshw)</a></p>
-		  <p><a href="mp4">Download (.mp4)</a></p>
+		  <h1>Pancake Day</h1>
+		  <p>Looks like the cyberstar wasn't working as intented.</p>
+		  <p class="creator">randombeans</p>
+		  <p><a href="https://www.mediafire.com/file/bt25k2stzx4g7bz/pancake.rshw/file">Download (.rshw)</a></p>
+		  <p><a href="https://www.mediafire.com/file/xlebdtmhfihwrlq/pancake.mp4/file">Download (.mp4)</a></p>
 		</div>
-		
-		<div id="cards"></div>
 	</div>
 	
 	<script>
-		fetch('./rtr_showtapes.json').then(result => { result.json().then(data => { console.log(data); }) }).catch(error => { console.log(error); })
+		fetch('./rtr_showtapes.json').then(result => { result.json().then(data.forEach(makeCard);)
+		
+		function makeCard(card)
+		{
+			console.log(card)
+			let container = document.createElement('div');
+			container.className = 'card';
+			
+			const thumb = document.createElement("img");
+			container.appendChild(thumb);
+			document.body.appendChild(container);
+			
+			console.log(card)
+			thumb.src = card;
+		}
     </script>
 
 
