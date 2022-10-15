@@ -65,6 +65,7 @@
 		
 		function makeCard(card)
 		{
+			console.log(card)
 			let container = document.createElement('div');
 			container.className = 'card';
 			
